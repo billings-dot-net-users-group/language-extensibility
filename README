@@ -1,0 +1,11 @@
+Language Extensibility Presentation.
+
+This solution contains a sample project that downloads information about HCPCS codes from a web service.
+There are four different implementations of this algorithm.
+
+1) SerialDescriber - Simplest possible serial implementation
+2) OldSchoolDescriber - Uses .NET 2.0 style Begin and End methods for async programming
+3) ManualAsyncDescriber - Uses .NET 3.5 Task objects for async programming
+4) AsyncAwaitDescriber - Uses .NET 4.5 async and await keywords for async programming.
+
+Also included is WebServiceTypeProvider.fsx. This is an F# script that demonstrates F# 3.0's Type providers.

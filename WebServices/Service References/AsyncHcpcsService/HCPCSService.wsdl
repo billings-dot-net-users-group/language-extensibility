@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.restfulwebservices.net/ServiceContracts/2008/01" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HCPCSService" targetNamespace="http://www.restfulwebservices.net/ServiceContracts/2008/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.restfulwebservices.net/ServiceContracts/2008/01/Imports">
+      <xsd:import schemaLocation="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd0" namespace="http://www.restfulwebservices.net/ServiceContracts/2008/01" />
+      <xsd:import schemaLocation="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd3" namespace="http://GOTLServices.FaultContracts/2008/01" />
+      <xsd:import schemaLocation="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd2" namespace="http://www.restfulwebservices.net/DataContracts/2008/01" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHCPCSService_GetDetailsByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsByCode" />
+  </wsdl:message>
+  <wsdl:message name="IHCPCSService_GetDetailsByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHCPCSService_GetDetailsByCode_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://GOTLServices.FaultContracts/2008/01" name="detail" element="q1:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IHCPCSService_GetDetailsByDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsByDescription" />
+  </wsdl:message>
+  <wsdl:message name="IHCPCSService_GetDetailsByDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsByDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHCPCSService_GetDetailsByDescription_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://GOTLServices.FaultContracts/2008/01" name="detail" element="q2:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:message name="IHCPCSService_GetDetailsBySeqNmber_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsBySeqNmber" />
+  </wsdl:message>
+  <wsdl:message name="IHCPCSService_GetDetailsBySeqNmber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsBySeqNmberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHCPCSService_GetDetailsBySeqNmber_DefaultFaultContractFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://GOTLServices.FaultContracts/2008/01" name="detail" element="q3:DefaultFaultContract" />
+  </wsdl:message>
+  <wsdl:portType name="IHCPCSService">
+    <wsdl:operation name="GetDetailsByCode">
+      <wsdl:input wsaw:Action="GetDetailsByCode" message="tns:IHCPCSService_GetDetailsByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.restfulwebservices.net/ServiceContracts/2008/01/IHCPCSService/GetDetailsByCodeResponse" message="tns:IHCPCSService_GetDetailsByCode_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.restfulwebservices.net/ServiceContracts/2008/01/IHCPCSService/GetDetailsByCodeDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:IHCPCSService_GetDetailsByCode_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsByDescription">
+      <wsdl:input wsaw:Action="GetDetailsByDescription" message="tns:IHCPCSService_GetDetailsByDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.restfulwebservices.net/ServiceContracts/2008/01/IHCPCSService/GetDetailsByDescriptionResponse" message="tns:IHCPCSService_GetDetailsByDescription_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.restfulwebservices.net/ServiceContracts/2008/01/IHCPCSService/GetDetailsByDescriptionDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:IHCPCSService_GetDetailsByDescription_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsBySeqNmber">
+      <wsdl:input wsaw:Action="GetDetailsBySeqNmber" message="tns:IHCPCSService_GetDetailsBySeqNmber_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.restfulwebservices.net/ServiceContracts/2008/01/IHCPCSService/GetDetailsBySeqNmberResponse" message="tns:IHCPCSService_GetDetailsBySeqNmber_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.restfulwebservices.net/ServiceContracts/2008/01/IHCPCSService/GetDetailsBySeqNmberDefaultFaultContractFault" name="DefaultFaultContractFault" message="tns:IHCPCSService_GetDetailsBySeqNmber_DefaultFaultContractFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IHCPCSService" type="tns:IHCPCSService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDetailsByCode">
+      <soap:operation soapAction="GetDetailsByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsByDescription">
+      <soap:operation soapAction="GetDetailsByDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetailsBySeqNmber">
+      <soap:operation soapAction="GetDetailsBySeqNmber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DefaultFaultContractFault">
+        <soap:fault use="literal" name="DefaultFaultContractFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HCPCSService">
+    <wsdl:port name="BasicHttpBinding_IHCPCSService" binding="tns:BasicHttpBinding_IHCPCSService">
+      <soap:address location="http://www.restfulwebservices.net/wcf/HCPCSService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

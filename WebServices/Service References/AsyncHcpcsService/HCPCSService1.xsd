@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.restfulwebservices.net/DataContracts/2008/01" elementFormDefault="qualified" targetNamespace="http://www.restfulwebservices.net/DataContracts/2008/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="HCPCS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ActionEffDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AnestBaseUnits" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ASCPayGrp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ASCPayGrpEffDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Betos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CIM1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CIM2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CIM3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeAddDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Coverage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Filler" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Hcpc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LabCert1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LabCert2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LabCert3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LabCert4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LabCert5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LabCert6" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LabCert7" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LabCert8" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LongDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MCM1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MCM2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MCM3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MOGEffDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MOGPayGrp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MOGPayInd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mpi" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PI1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PI2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PI3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PI4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProcNote" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ric" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SeqNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Statute" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TermDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOS1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOS2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOS3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOS4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOS5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XRef1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XRef2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XRef3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XRef4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XRef5" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HCPCS" nillable="true" type="tns:HCPCS" />
+  <xs:complexType name="ArrayOfHCPCS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="HCPCS" nillable="true" type="tns:HCPCS" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfHCPCS" nillable="true" type="tns:ArrayOfHCPCS" />
+</xs:schema>

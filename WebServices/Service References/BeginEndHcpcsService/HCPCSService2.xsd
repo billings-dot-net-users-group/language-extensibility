@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.restfulwebservices.net/ServiceContracts/2008/01" elementFormDefault="qualified" targetNamespace="http://www.restfulwebservices.net/ServiceContracts/2008/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd2" namespace="http://www.restfulwebservices.net/DataContracts/2008/01" />
+  <xs:element name="GetDetailsByCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDetailsByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.restfulwebservices.net/DataContracts/2008/01" minOccurs="0" name="GetDetailsByCodeResult" nillable="true" type="q1:HCPCS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDetailsByDescription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDetailsByDescriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://www.restfulwebservices.net/DataContracts/2008/01" minOccurs="0" name="GetDetailsByDescriptionResult" nillable="true" type="q2:ArrayOfHCPCS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDetailsBySeqNmber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="request" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDetailsBySeqNmberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://www.restfulwebservices.net/DataContracts/2008/01" minOccurs="0" name="GetDetailsBySeqNmberResult" nillable="true" type="q3:HCPCS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

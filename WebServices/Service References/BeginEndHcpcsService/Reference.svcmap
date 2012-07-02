@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="003b20cb-b764-45c1-889d-abc17d2a05b1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.restfulwebservices.net/wcf/HCPCSService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HCPCSService.xsd" MetadataType="Schema" ID="b5f5c802-8c2f-44b3-a281-53b753df5c45" SourceId="1" SourceUrl="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd1" />
+    <MetadataFile FileName="HCPCSService1.xsd" MetadataType="Schema" ID="09a9cd5f-e508-404f-9ea7-c55616d0e8bb" SourceId="1" SourceUrl="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd2" />
+    <MetadataFile FileName="HCPCSService2.xsd" MetadataType="Schema" ID="4fef159c-9c84-48a1-800c-1f3d52dc14f6" SourceId="1" SourceUrl="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd0" />
+    <MetadataFile FileName="HCPCSService3.xsd" MetadataType="Schema" ID="d8fb1778-658d-454a-a1f1-a708a62d2236" SourceId="1" SourceUrl="http://www.restfulwebservices.net/wcf/HCPCSService.svc?xsd=xsd3" />
+    <MetadataFile FileName="HCPCSService.wsdl" MetadataType="Wsdl" ID="cb81db31-e94d-4afc-a21f-9a415d709475" SourceId="1" SourceUrl="http://www.restfulwebservices.net/wcf/HCPCSService.svc?wsdl" />
+    <MetadataFile FileName="HCPCSService.disco" MetadataType="Disco" ID="8fcb45c4-11f8-41bd-8409-caf4c053aa43" SourceId="1" SourceUrl="http://www.restfulwebservices.net/wcf/HCPCSService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
